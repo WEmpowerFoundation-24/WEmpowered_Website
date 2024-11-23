@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+
+@layer base{
+    @font-face {
+        font-family: "Gilroy-Regular";
+        src: url("/src/fonts/gilroy/Gilroy-Regular.ttf");
+    }
+}
