@@ -10,7 +10,12 @@ export default {
         'Class-student':"url('./src/assets/Home_Assets/HomePageImage.png')",
       },
       fontFamily:{
-        'Gilroy': ['Gilroy-Regular', 'sans-serif'],
+        'Gilroy-600': ['Gilroy-Regular', 'sans-serif'],
+        'Gilroy-400': ['Gilroy-Light', 'sans-serif'],
+        'Gilroy-500': ['Gilroy-Medium', 'sans-serif'],
+        'Gilroy-700': ['Gilroy-SemiBold', 'sans-serif'],
+        'Gilroy-800': ['Gilroy-Bold', 'sans-serif'],
+        'Gilroy-900': ['Gilroy-ExtraBold', 'sans-serif'],
       }
     },
   },
