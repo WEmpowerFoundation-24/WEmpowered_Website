@@ -94,8 +94,9 @@ export default function Home() {
         <div className="flex justify-center relative">
           <div className="pr-72">
             <div className="font-Gilroy-700 text-6xl tracking-[0.04em] mb-10 pr-16 text-wrap leading-[75px]">
-              Empowering Mothers and Children for a <span className="text-[#791975]">
-              Resilient, Inclusive Future
+              Empowering Mothers and Children for a{" "}
+              <span className="text-[#791975]">
+                Resilient, Inclusive Future
               </span>
             </div>
             <div className="font-Gilroy-400 text-lg text-wrap pr-80">
@@ -134,6 +135,22 @@ export default function Home() {
               className="absolute w-80 top-60 right-56"
             />
           </div>
+        </div>
+      </div>
+
+      {/* Home Page-4 */}
+      <div className="relative">
+        <div className="bg-Group-Picnic w-screen h-96">
+          <div className="h-96 w-screen bg-black opacity-50 top-0"></div>
+        </div>
+        <div className="absolute top-0">
+         <div className="flex items-center px-32 py-28">
+          <div className="border-white w-[460px] border-2 self-start mt-10"></div>
+          <div className="flex flex-col text-white ml-8 pr-4 mt-1">
+            <h1 className="font-Gilroy-700 text-6xl tracking-[0.04em] pt-4">Our Vision</h1>
+            <p className="font-Gilroy-500 text-2xl pt-4 ">One day every child & mother will lead each other to be empowered</p>
+          </div>
+         </div>
         </div>
       </div>
     </>
