@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'Class-student':"url('./src/assets/Home_Assets/HomePageImage.png')",
-        'Group-Picnic':"url('./src/assets/Home_Assets/GroupLunchPhoto.png')",
-        'Working_site_img':"url('./src/assets/Home_Assets/Working_Site_image.png')"
+        'Class-student':"url('src/assets/Home_Assets/HomePageImage.png')",
+        'Group-Picnic':"url('src/assets/Home_Assets/GroupLunchPhoto.png')",
+        'Working_site_img':"url('src/assets/Home_Assets/Working_Site_image.png')"
       },
       fontFamily:{
         'Gilroy-600': ['Gilroy-Regular', 'sans-serif'],
