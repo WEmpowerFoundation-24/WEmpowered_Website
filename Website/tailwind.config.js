@@ -5,6 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens:{
+      'xxxxs': '280px',
+      'xxxs': '345px',
+      'xxs': '376px',
+      'xs': '480px',
+      's': '520px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       backgroundImage:{
         'Class-student':"url('assets/Home_Assets/HomePageImage.png')",
