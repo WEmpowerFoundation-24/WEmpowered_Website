@@ -42,6 +42,9 @@ body{
 .subheading{
     @apply text-wrap text-sm xs:text-base xl:text-xl xl:mr-72
 }
+/* Below two are for Home_Part1.jsx and its components */
+/* forheight classname is in Home_Part1.jsx */
+/* forArrow classname is in Text.jsx  */
 
 @media(max-height:451px) and (min-height:300px) {
     .forheight{
