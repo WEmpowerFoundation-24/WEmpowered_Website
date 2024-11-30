@@ -33,3 +33,12 @@ body{
         src: url("/src/fonts/gilroy/Gilroy-UltraLight.ttf");
     }
 }
+
+/*-------------------> Home page <----------------*/
+/* Home Page-1 (heading Component)*/
+.heading{
+    @apply text-3xl font-Gilroy-500 xs:text-4xl ss:text-4xl md:text-5xl md-lg:text-6xl xl:text-7xl xl:font-Gilroy-700
+}
+.subheading{
+    @apply text-wrap text-sm xs:text-base xl:text-xl xl:mr-72
+}

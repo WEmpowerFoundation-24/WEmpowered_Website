@@ -11,7 +11,7 @@ export default function Navlist() {
         <div className="hidden justify-between items-center md:flex md:gap-x-6 lg:gap-x-11 list-none">
           <List />
         </div>
-        <ContactUs style={"hidden bg-white text-black rounded-lg font-Gilroy-500 sm:flex sm:py-3 sm:px-6 sm:text-base"}/>
+        <ContactUs style={"hidden bg-white text-black rounded-lg font-Gilroy-500 sm:flex sm:py-2 sm:px-4 sm:text-base"}/>
         <div className={`md:hidden flex justify-center items-center ${toggle?"ml-44":"ml-8"}`}>
           <img src={toggle?Cross:humburger} alt={toggle?"Humburger":"Cross"} className={`${toggle?"w-4 mr-2 py-3":"w-12"} cursor-pointer z-10 absolute`} onClick={()=>{setToggle(!toggle)}}/>
           <div className={`absolute top-0 w-80 h-screen bg-black  list-none flex-col justify-evenly xxxxs:py-64 xxxxs:px-8 xxxs:py-48 xxs:py-72 xxs:px-12 text-nowrap ${toggle?"flex":"hidden"}`}>
