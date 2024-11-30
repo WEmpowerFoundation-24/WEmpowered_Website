@@ -19,6 +19,8 @@ export default {
       'lg-xl': '1100px',
       'xl': '1280px',
       '2xl': '1536px',
+      '3xl': '1628px',
+      '4xl': '1700px',
     },
     extend: {
       backgroundImage:{

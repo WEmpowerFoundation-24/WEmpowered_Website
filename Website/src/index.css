@@ -42,3 +42,54 @@ body{
 .subheading{
     @apply text-wrap text-sm xs:text-base xl:text-xl xl:mr-72
 }
+
+@media(max-height:451px) and (min-height:300px) {
+    .forheight{
+        @apply my-16
+    }
+    .forArrow{
+        @apply mb-4
+    }
+}
+@media(max-height:518px) and (min-height:451px) {
+    .forheight{
+        @apply my-16
+    }
+    .forArrow{
+        @apply mb-16
+    }
+}
+@media(max-height:600px) and (min-height:518px) {
+    .forheight{
+        @apply my-24
+    }
+    .forArrow{
+        @apply mb-16
+    }
+}
+@media(max-height:715px) and (min-height:601px) {
+    .forheight{
+        @apply my-28
+    }
+    .forArrow{
+        @apply mb-28
+    }
+}
+@media(max-height:857px) and (min-height:715px) {
+    .forheight{
+        @apply my-28
+    }
+    .forArrow{
+        @apply mb-48
+    }
+}
+@media(min-height:857px) {
+    .forheight{
+        @apply my-40
+    }
+    .forArrow{
+        @apply mb-52 xxxs:mb-60 s:mb-56 sm:mb-60 xl:mb-44
+    }
+}
+
+
