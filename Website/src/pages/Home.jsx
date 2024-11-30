@@ -5,7 +5,7 @@ import {
   Home_Part4,
   Home_Part5,
   Home_Part6,
-} from "../components/Home-Components";
+} from "/src/components/Home-Components";
 
 export default function Home() {
   return (
