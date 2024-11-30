@@ -1,6 +1,6 @@
-import Vector1 from "src/assets/Home_Assets/HomePart1/Vector-1.png";
-import Vector2 from "src/assets/Home_Assets/HomePart1/Vector-2.png";
-import Vector3 from "src/assets/Home_Assets/HomePart1/Vector.png";
+import Vector1 from "/src/assets/Home_Assets/HomePart1/Vector-1.png";
+import Vector2 from "/src/assets/Home_Assets/HomePart1/Vector-2.png";
+import Vector3 from "/src/assets/Home_Assets/HomePart1/Vector.png";
 export default function Heading() {
   return (
     <>
