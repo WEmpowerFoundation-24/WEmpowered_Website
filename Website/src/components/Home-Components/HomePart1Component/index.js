@@ -1,5 +1,5 @@
 import DownArrow from "./DownArrow";
-import Text from "./text";
+import Text from "./Text";
 export{
     DownArrow,
     Text,
