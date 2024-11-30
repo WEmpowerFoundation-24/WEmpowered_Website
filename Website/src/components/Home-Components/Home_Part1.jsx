@@ -1,5 +1,5 @@
 
-import {DownArrow,Text} from "../Home-Components/HomePart1_Component"
+import {DownArrow,Text} from "src/components/Home-Components/HomePart1_Component"
 export default function Home_Part1() {
   return (
     <>
