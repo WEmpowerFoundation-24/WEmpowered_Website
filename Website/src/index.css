@@ -75,7 +75,7 @@ body{
         @apply mb-28
     }
 }
-@media(max-height:857px) and (min-height:715px) {
+@media(max-height:780px) and (min-height:715px) {
     .forheight{
         @apply my-28
     }
@@ -83,13 +83,48 @@ body{
         @apply mb-48
     }
 }
+@media(min-height:780px) {
+    .forheight{
+        @apply my-36
+    }
+    .forArrow{
+        @apply mb-48
+    }
+}
 @media(min-height:857px) {
+    .forheight{
+        @apply my-36
+    }
+    .forArrow{
+        @apply mb-60 xxxs:mb-60 s:mb-56 sm:mb-60 xl:mb-44
+    }
+}
+@media(min-height:920px) {
     .forheight{
         @apply my-40
     }
     .forArrow{
-        @apply mb-52 xxxs:mb-60 s:mb-56 sm:mb-60 xl:mb-44
+        @apply mb-64 xxxs:mb-72 s:mb-72 sm:mb-72 xl:mb-56
     }
 }
+@media(min-height:1000px) {
+    .forheight{
+        @apply my-48
+    }
+}
+@media(min-height:1100px) {
+    .forheight{
+        @apply my-52
+    }
+    .forArrow{
+        @apply mb-80 xxxs:mb-80 s:mb-80 sm:mb-80 xl:mb-64
+    }
+}
+@media(min-height:1100px) {
+    .forheight{
+        @apply my-64
+    }
+}
+
 
 
