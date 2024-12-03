@@ -15,9 +15,9 @@ export default function Home() {
         <Home_Part1 />
       </div>
       {/* Home page-2 */}
-      {/* <Home_Part2 /> */}
+      <Home_Part2 />
       {/* Home page-3 */}
-      {/* <Home_Part3 /> */}
+      <Home_Part3 />
       {/* Home Page-4 */}
       {/* <Home_Part4 /> */}
       {/* Home Page-5 */}
