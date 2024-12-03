@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
+@layer base{
+    @font-face {
+        font-family: "Gilroy-Regular";
+        src: url("/src/fonts/gilroy/Gilroy-Regular.ttf");
+    }
+    @font-face {
+        font-family: "Gilroy-Medium";
+        src: url("/src/fonts/gilroy/Gilroy-Medium.ttf");
+    }
+    @font-face {
+        font-family: "Gilroy-SemiBold";
+        src: url("/src/fonts/gilroy/Gilroy-SemiBold.ttf");
+    }
+    @font-face {
+        font-family: "Gilroy-Bold";
+        src: url("/src/fonts/gilroy/Gilroy-Bold.ttf");
+    }
+    @font-face {
+        font-family: "Gilroy-ExtraBold";
+        src: url("/src/fonts/gilroy/Gilroy-ExtraBold.ttf");
+    }
+    @font-face {
+        font-family: "Gilroy-Light";
+        src: url("/src/fonts/gilroy/Gilroy-UltraLight.ttf");
+    }
+}
+
+/*-------------------> Home page <----------------*/
+/* Home Page-1 (heading Component)*/
+.heading{
+    @apply text-3xl font-Gilroy-500 xs:text-4xl ss:text-4xl md:text-5xl lg-xl:text-6xl xl:text-7xl xl:font-Gilroy-700
+}
+.subheading{
+    @apply text-wrap text-sm xs:text-base xl:text-xl xl:mr-72
+}
+/* Below two are for Home_Part1.jsx and its components */
+/* forheight classname is in Home_Part1.jsx */
+/* forArrow classname is in Text.jsx  */
+
+@media(max-height:451px) and (min-height:300px) {
+    .forheight{
+        @apply my-16
+    }
+    .forArrow{
+        @apply mb-4
+    }
+}
+@media(max-height:518px) and (min-height:451px) {
+    .forheight{
+        @apply my-16
+    }
+    .forArrow{
+        @apply mb-16
+    }
+}
+@media(max-height:600px) and (min-height:518px) {
+    .forheight{
+        @apply my-24
+    }
+    .forArrow{
+        @apply mb-16
+    }
+}
+@media(max-height:715px) and (min-height:601px) {
+    .forheight{
+        @apply my-28
+    }
+    .forArrow{
+        @apply mb-28
+    }
+}
+@media(max-height:780px) and (min-height:715px) {
+    .forheight{
+        @apply my-28
+    }
+    .forArrow{
+        @apply mb-40
+    }
+}
+@media(min-height:780px) {
+    .forheight{
+        @apply my-36
+    }
+    .forArrow{
+        @apply mb-48
+    }
+}
+@media(min-height:857px) {
+    .forheight{
+        @apply my-36
+    }
+    .forArrow{
+        @apply mb-60 xxxs:mb-60 s:mb-56 sm:mb-60 xl:mb-44
+    }
+}
+@media(min-height:920px) {
+    .forheight{
+        @apply my-40
+    }
+    .forArrow{
+        @apply mb-64 xxxs:mb-72 s:mb-72 sm:mb-72 xl:mb-56
+    }
+}
+@media(min-height:1000px) {
+    .forheight{
+        @apply my-48
+    }
+}
+@media(min-height:1100px) {
+    .forheight{
+        @apply my-52
+    }
+    .forArrow{
+        @apply mb-80 xxxs:mb-80 s:mb-80 sm:mb-80 xl:mb-64
+    }
+}
+@media(min-height:1100px) {
+    .forheight{
+        @apply my-64
+    }
+}
+
+
+
