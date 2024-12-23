@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Star from "/src/assets/Home_Assets/Pink Star.png";
 import Classroom1 from "/src/assets/Home_Assets/Classroom-1.png";
 import Classroom2 from "/src/assets/Home_Assets/Classroom-2.png";
@@ -27,16 +26,6 @@ export default function Images() {
         className="w-32  lg:w-64 xl:w-80 lg:absolute lg:right-56 lg:top-60 hidden xl:block"
       />
     </div>
-=======
-import img from "/src/assets/Home_Assets/img.png"
-export default function Images() {
-  return (
-    <>
-      <div className="hidden lg-xl:flex lg-xl:w-[1600px] xl:w-[2000px] mx-6">
-            <img src={img} className="" />
-      </div>
-    </>
->>>>>>> 229bd76 (done changes)
   );
 }
 
