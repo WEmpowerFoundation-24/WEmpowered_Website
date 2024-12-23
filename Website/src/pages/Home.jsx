@@ -19,11 +19,11 @@ export default function Home() {
       {/* Home page-3 */}
       <Home_Part3 />
       {/* Home Page-4 */}
-      {/* <Home_Part4 /> */}
+      <Home_Part4 />
       {/* Home Page-5 */}
-      {/* <Home_Part5 /> */}
+      <Home_Part5 />
       {/* Home Page-6 */}
-      {/* <Home_Part6 /> */}
+      <Home_Part6 />
     </div>
   );
 }
