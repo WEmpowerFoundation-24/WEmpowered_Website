@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { WhoWeAre, Heading, Paragraph, Images } from "./HomePart3Component";
 
 export default function Home_Part3() {
@@ -15,20 +14,6 @@ export default function Home_Part3() {
             <Paragraph />
           </div>
           <Images />
-=======
-import { WhoWeAre , Heading,Paragraph,Images} from "./HomePart3Component";
-export default function Home_Part3() {
-  return (
-    <>
-      <div className="flex justify-start flex-col lg-xl:py-20 xl:py-28  lg-xl:px-20 xl:px-28" id="about">
-        <WhoWeAre />
-        <div className="flex">
-          <div className="flex flex-col">
-            <Heading/>
-            <Paragraph/>
-          </div>
-          <Images/>
->>>>>>> 229bd76 (done changes)
         </div>
       </div>
     </>
