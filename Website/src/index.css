@@ -51,7 +51,7 @@ body{
         @apply my-16
     }
     .forArrow{
-        @apply mb-4
+        @apply mb-[-50px]
     }
 }
 @media(max-height:518px) and (min-height:451px) {
@@ -59,7 +59,7 @@ body{
         @apply my-16
     }
     .forArrow{
-        @apply mb-16
+        @apply mb-1
     }
 }
 @media(max-height:600px) and (min-height:518px) {
@@ -67,7 +67,7 @@ body{
         @apply my-24
     }
     .forArrow{
-        @apply mb-16
+        @apply mb-1
     }
 }
 @media(max-height:715px) and (min-height:601px) {
@@ -75,7 +75,7 @@ body{
         @apply my-28
     }
     .forArrow{
-        @apply mb-28
+        @apply mb-16
     }
 }
 @media(max-height:780px) and (min-height:715px) {
