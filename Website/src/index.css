@@ -91,7 +91,7 @@ body{
         @apply my-36
     }
     .forArrow{
-        @apply mb-44
+        @apply mb-36
     }
 }
 @media(min-height:857px) {
