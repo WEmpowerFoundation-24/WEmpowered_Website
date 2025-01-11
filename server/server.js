@@ -16,6 +16,6 @@ app.get("/",(req,res)=>{
 app.use("/emails", EmailRoutes);
 
 app.listen(port,()=>{
-   connectDB();
+   // connectDB();
     console.log(`Server is listening on port ${port}`);
  }) 
