@@ -1,5 +1,3 @@
-import React from "react";
-
 const images = [
   { src: "/src/assets/Home_Assets/HomePart9/img1.png", dimensions: "w-[92px] h-[175px]" },
   { src: "/src/assets/Home_Assets/HomePart9/img2.png", dimensions: "w-[92px] h-[326px]" },
