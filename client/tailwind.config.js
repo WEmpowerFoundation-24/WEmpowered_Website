@@ -26,7 +26,8 @@ export default {
       backgroundImage:{
         'Class-student':"url('assets/Home_Assets/HomePageImage.png')",
         'Group-Picnic':"url('assets/Home_Assets/GroupLunchPhoto.png')",
-        'Working_site_img':"url('assets/Home_Assets/Working_Site_image.png')"
+        'Working_site_img':"url('assets/Home_Assets/Working_Site_image.png')",
+        "Contact_US":"url('assets/Home_Assets/ContactUsPic.png')"
       },
       fontFamily:{
         'Gilroy-600': ['Gilroy-Regular', 'sans-serif'],

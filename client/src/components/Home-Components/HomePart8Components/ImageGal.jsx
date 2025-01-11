@@ -23,7 +23,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="relative flex flex-col bg-white px-6 py-16 xl:py-12 pr-0">
+    <div className="relative flex flex-col bg-white px-6 py-10 xl:py-12 pr-0">
       {/* Image Section */}
       <div className="relative flex-1 flex justify-center items-center">
         {/* Images */}

@@ -9,19 +9,19 @@ export default function Footer() {
         <div className="flex justify-start sm:justify-between text-white flex-wrap gap-14">
           <div className="flex flex-col justify-between">
             <p className="font-Gilroy-700 text-xl mb-4">WEmpower</p>
-            <p className="font-Gilroy-600 text-xl my-4">+918492394939</p>
-            <p className="font-Gilroy-400 text-base">support@wempower.co</p>
+            <p className="font-Gilroy-600 text-xl my-4">+91 8492394939</p>
+            <p className="font-Gilroy-400 text-base">wempower.foundation2024@gmail.com</p>
           </div>
           <div className="flex flex-col justify-between">
             <p className="xl:mr-60 font-Gilroy-600 text-lg">Quick Links</p>
             <div className="flex gap-4 xxxxs:gap-6 xxxs:gap-16 mt-[30px] sm:mt-[8px]">
               <div className="flex flex-col opacity-65 font-Gilroy-400 text-base gap-6">
-                <p>Home</p>
-                <p>About Us</p>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
               </div>
               <div className="flex flex-col opacity-65 font-Gilroy-400 text-base gap-6">
-                <p className="pl-8">Our Team</p>
-                <p>Our RoadMap</p>
+                <a className="pl-8" href="#team">Our Team</a>
+                <a href="#roadmap">Our RoadMap</a>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function Footer() {
         <hr className="opacity-20 border-1 mb-8 mt-16" />
         <div className="flex text-white justify-center sm:justify-between gap-16 flex-wrap">
           <div className="flex">
-            <img src={Linkedin} alt="linkedin" />
+            <a href="https://www.linkedin.com/company/wempower-foundation/" target="_blank"><img src={Linkedin} alt="linkedin"/></a>
             <img src={Facebook} alt="facebook" className="mx-4" />
             <img src={Twitter} alt="twitter" />
           </div>
