@@ -18,5 +18,5 @@ export{
     img7,
     img8,
     img9,
-    img10
+    img10,
 }
