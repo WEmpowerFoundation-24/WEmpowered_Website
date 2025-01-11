@@ -1,12 +1,13 @@
 import React from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import {im1,im2,im3,im4,im5} from "/src/assets/Home_Assets/HomePart8/index.js"
 
 const images = [
-  { src: "/src/assets/Home_Assets/HomePart8/im1.png", title: "Image 1" },
-  { src: "/src/assets/Home_Assets/HomePart8/im2.png", title: "Image 2" },
-  { src: "/src/assets/Home_Assets/HomePart8/im3.png", title: "Image 3" },
-  { src: "/src/assets/Home_Assets/HomePart8/im4.png", title: "Image 4" },
-  { src: "/src/assets/Home_Assets/HomePart8/im5.png", title: "Image 5" },
+  { src: im1, title: "Image 1" },
+  { src: im2, title: "Image 2" },
+  { src: im3, title: "Image 3" },
+  { src: im4, title: "Image 4" },
+  { src: im5, title: "Image 5" },
 ];
 
 const Gallery = () => {

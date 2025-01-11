@@ -1,6 +1,6 @@
 import {create} from "zustand"
 import axios from "axios"
-const API_URL = "http://localhost:3000/emails";
+const API_URL = "https://wempowered-server.onrender.com/emails";
 
 axios.defaults.withCredentials = true;
 export const useEmailStore = create((set) => ({
@@ -14,7 +14,7 @@ export const useEmailStore = create((set) => ({
             const response = await axios.post(`${API_URL}/contactUs`,{email,name,phoneNo,findUs})
             set({isLoading:false,messageSent:true, user:response.data.user});
         } catch (error) {
-            set({error:error.response.data.message || "Error in contactUs Route"});
+            set({error:error.response?.data?.message || "Error in contactUs Route"});
             throw error;
         }
     },

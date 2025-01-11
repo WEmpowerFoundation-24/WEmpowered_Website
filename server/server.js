@@ -6,7 +6,7 @@ const cors = require("cors")
 dotenv.config();
 const app = express();
 const port = 3000;
-app.use(cors({origin:"http://localhost:5173",credentials:true}));
+app.use(cors({origin:"https://wempowered.onrender.com",credentials:true}));
 app.use(express.json()); // allow use to parse the content in req.body
 
 app.get("/",(req,res)=>{
@@ -16,6 +16,6 @@ app.get("/",(req,res)=>{
 app.use("/emails", EmailRoutes);
 
 app.listen(port,()=>{
-   connectDB();
+   // connectDB();
     console.log(`Server is listening on port ${port}`);
  }) 
