@@ -1,14 +1,15 @@
+import {img1,img2,img3,img4,img5,img6,img7,img8,img9,img10} from "/src/assets/Home_Assets/HomePart9/index.js"
 const images = [
-  { src: "/src/assets/Home_Assets/HomePart9/img1.png", dimensions: "w-[92px] h-[175px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img2.png", dimensions: "w-[92px] h-[326px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img3.png", dimensions: "w-[92px] h-[136px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img4.png", dimensions: "w-[352px] h-[423px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img5.png", dimensions: "w-[352px] h-[236px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img6.png", dimensions: "w-[353px] h-[314px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img7.png", dimensions: "w-[353px] h-[344px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img8.png", dimensions: "w-[371px] h-[677px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img9.png", dimensions: "w-[356px] h-[314px]" },
-  { src: "/src/assets/Home_Assets/HomePart9/img10.png", dimensions: "w-[356px] h-[344px]" },
+  { src: img1.png, dimensions: "w-[92px] h-[175px]" },
+  { src: img2.png, dimensions: "w-[92px] h-[326px]" },
+  { src: img3.png, dimensions: "w-[92px] h-[136px]" },
+  { src: img4.png, dimensions: "w-[352px] h-[423px]" },
+  { src: img5.png, dimensions: "w-[352px] h-[236px]" },
+  { src: img6.png, dimensions: "w-[353px] h-[314px]" },
+  { src: img7.png, dimensions: "w-[353px] h-[344px]" },
+  { src: img8.png, dimensions: "w-[371px] h-[677px]" },
+  { src: img9.png, dimensions: "w-[356px] h-[314px]" },
+  { src: img10.png, dimensions: "w-[356px] h-[344px]" },
 ];
 
 const ImageCollage = () => {
