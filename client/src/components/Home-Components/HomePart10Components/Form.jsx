@@ -20,6 +20,7 @@ const Form = () => {
     try{
       await contactus(email,name,phoneNo,findUs);
       if(messageSent){
+        alert("Message sent successfully");
         setName("");
         setEmail("");
         setPhoneNo("");
