@@ -15,24 +15,23 @@ export default function Home() {
       <div className="relative">
         <Home_Part1 />
       </div>
-
       {/* Home page-2 */}
       <Home_Part2 />
-
       {/* Home page-3 */}
       <Home_Part3 />
-
       {/* Home Page-4 */}
       <Home_Part4 />
-
       {/* Home Page-5 */}
       <Home_Part5 />
-
       {/* Home Page-6 */}
       <Home_Part6 />
+      {/* Home Page-7 */}
       <Home_Part7/>
+      {/* Home Page-8 */}
       <Home_Part8/>
+      {/* Home Page-9 */}
       <Home_Part9/>
+      {/* Home Page-10 */}
       <Home_Part10/>
     </div>
   );
