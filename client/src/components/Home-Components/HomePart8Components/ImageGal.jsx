@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 
 const images = [
-  { src: "/src/assets/Home_Assets/HomePart8/im1.png", title: "Image 1" },
+  { src: "/assets/Home_Assets/HomePart8/im1.png", title: "Image 1" },
   { src: "/src/assets/Home_Assets/HomePart8/im2.png", title: "Image 2" },
   { src: "/src/assets/Home_Assets/HomePart8/im3.png", title: "Image 3" },
   { src: "/src/assets/Home_Assets/HomePart8/im4.png", title: "Image 4" },
