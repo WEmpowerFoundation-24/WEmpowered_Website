@@ -2,6 +2,7 @@ import { Home_Part10, Home_Part7, Home_Part8, Home_Part9 } from "../components/H
 import {
   Home_Part1,
   Home_Part2,
+  Home_Part2_SGDs,
   Home_Part3,
   Home_Part4,
   Home_Part5,
@@ -16,7 +17,7 @@ export default function Home() {
         <Home_Part1 />
       </div>
       {/* Home page-2 */}
-      <Home_Part2 />
+      <Home_Part2_SGDs/>
       {/* Home page-3 */}
       <Home_Part3 />
       {/* Home Page-4 */}
