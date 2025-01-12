@@ -9,10 +9,6 @@ const port = 3000;
 app.use(cors({origin:"https://wempowered.onrender.com",credentials:true}));
 app.use(express.json()); // allow use to parse the content in req.body
 
-app.get("/",(req,res)=>{
-   res.send("hello");
-})
-
 app.use("/emails", EmailRoutes);
 
 app.listen(port,()=>{
