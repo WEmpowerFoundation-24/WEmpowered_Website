@@ -41,7 +41,7 @@ const Form = () => {
         <Submit LoaderData={isLoading} />
       </form>
       <div className="flex flex-wrap gap-6 mt-8">
-        <ContactInfo image={phone} text="PHONE" context="8492394939" />
+        <ContactInfo image={phone} text="PHONE" context="+91 7988477400" />
         <ContactInfo image={mail} text="EMAIL" context="wempower.foundation2024@gmail.com" />
       </div>
     </div>
