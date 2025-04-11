@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
@@ -9,40 +9,57 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const Newsletter_Data = () => {
   const [numPages, setNumPages] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+  const [useEmbed, setUseEmbed] = useState(false);
+  const [containerWidth, setContainerWidth] = useState(800);
 
-  // PDF path - make sure it's in public folder
-  const newsletterPdf ='/we_connect.pdf';
+  // PDF path
+  const newsletterPdf = '/we_connect.pdf';
+
+  // Calculate proper width based on A4 aspect ratio
+  const calculateWidth = () => {
+    const maxWidth = window.innerWidth * 0.9;
+    const a4Ratio = 210 / 297;
+    const calculatedWidth = Math.min(maxWidth, 297 * a4Ratio * 3.78);
+    setContainerWidth(calculatedWidth);
+  };
+
+  useEffect(() => {
+    calculateWidth();
+    window.addEventListener('resize', calculateWidth);
+    return () => window.removeEventListener('resize', calculateWidth);
+  }, []);
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
     setLoading(false);
-    setError(false);
   };
 
   const onDocumentLoadError = (error) => {
     console.error('PDF load error:', error);
-    setError(true);
+    setUseEmbed(true);
     setLoading(false);
   };
 
   return (
     <div className="container mx-auto p-4">
-
-      {error ? (
-        <div className="text-center p-8 bg-red-50 rounded-lg">
-          <p className="text-red-600 font-medium">Failed to load PDF</p>
-          <p className="mt-4">
-            You can <a href={newsletterPdf} className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">view the PDF directly</a>
-          </p>
-        </div>
-      ) : (
-        <div className="flex flex-col items-center gap-8">
+      <div className="flex flex-col items-center gap-8">
+        {useEmbed ? (
+          <div className="w-full" style={{ height: `${containerWidth * 1.414}px` }}>
+            <embed 
+              src={newsletterPdf}
+              type="application/pdf"
+              width="100%"
+              height="100%"
+              className="border border-gray-200"
+            />
+          </div>
+        ) : (
           <div 
-            className="bg-white shadow-lg relative" 
+            className="bg-white shadow-lg relative mx-auto" 
             style={{ 
-              width: '210mm',
-              minHeight: '297mm'
+              width: `${containerWidth}px`,
+              height: `${containerWidth * 1.414}px`,
+              overflow: 'hidden'
             }}
           >
             {loading && (
@@ -55,46 +72,22 @@ const Newsletter_Data = () => {
               file={newsletterPdf}
               onLoadSuccess={onDocumentLoadSuccess}
               onLoadError={onDocumentLoadError}
-              loading={null} // We handle loading state ourselves
+              loading={null}
             >
-              {Array.from(new Array(numPages), (_, index) => (
-                <div 
-                  key={`page_${index + 1}`}
-                  className="mb-8 last:mb-0"
-                >
-                  <Page
-                    pageNumber={index + 1}
-                    width={210 * 3.78}
-                    className="border border-gray-200"
-                    loading={
-                      <div className="flex justify-center items-center h-[297mm]">
-                        Loading page {index + 1}...
-                      </div>
-                    }
-                  />
-                </div>
-              ))}
+              <Page
+                pageNumber={1}
+                width={containerWidth}
+                className="border border-gray-200"
+                loading={
+                  <div className="flex justify-center items-center h-full">
+                    Loading page...
+                  </div>
+                }
+              />
             </Document>
           </div>
-        </div>
-      )}
-
-      {/* Print Button - shows only when PDF is loaded */}
-      {numPages && !error && (
-        <div className="mt-8 text-center">
-          <button
-            onClick={() => {
-              const printWindow = window.open(newsletterPdf);
-              printWindow?.addEventListener('load', () => {
-                setTimeout(() => printWindow.print(), 500);
-              });
-            }}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded transition"
-          >
-            Print Newsletter
-          </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
