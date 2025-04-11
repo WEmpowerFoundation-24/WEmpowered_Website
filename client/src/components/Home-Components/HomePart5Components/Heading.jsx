@@ -6,7 +6,7 @@ const Heading = () => {
           Our Mission
         </h1>
         <p className="font-Gilroy-500 xs:text-xl xs:leading-[30px] xl:text-right text-[#5D3A66]">
-          TWEmpower Foundation, established in 2024, aims to work toward a resilient community whose foundation is built on mutual respect and growth for mothers and children. 
+          WEmpower Foundation, established in 2024, aims to work toward a resilient community whose foundation is built on mutual respect and growth for mothers and children. 
           At WEmpower, we are committed to a mission defined by three main objectives:
         </p>
       </div>

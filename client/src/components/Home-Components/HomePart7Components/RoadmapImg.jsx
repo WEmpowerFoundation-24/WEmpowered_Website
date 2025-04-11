@@ -2,7 +2,7 @@ import Roadmap from "/src/assets/Home_Assets/Roadmap.png";
 
 export default function Images() {
   return (
-    <div className="relative flex justify-center items-center w-full h-full mx-2 sm:mx-0 my-7">
+    <div className="relative flex justify-center items-center w-full h-full px-1 sm:mx-0 my-7">
       <img
         src={Roadmap}
         alt="roadmap image"
