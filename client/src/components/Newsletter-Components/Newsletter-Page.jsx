@@ -4,7 +4,7 @@ import Newsletter_Data from "./Newsletter-Data"
 const NewsletterPage = () => {
   return (
     <>
-    <div id="roadmap" className="bg-orange-100">
+    <div id="newsletter" className="bg-orange-100">
       <Heading />
       <div className="mb-15">
       <Newsletter_Data />

@@ -1,16 +1,18 @@
 /* eslint-disable react/prop-types */
-import { useRef } from "react";
-export default function ContactUs_Button({style}) {
-  const link = useRef();
-  const handleClick = ()=>{
-    link.current.click();
-  }
+export default function ContactUs_Button({ style }) {
+  const handleClick = () => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // fallback if the section doesn't exist (e.g., on different route)
+      window.location.href = "/#contact";
+    }
+  };
+
   return (
-    <>
-    <a href="#contact" className="hidden" ref={link}></a>
     <button className={style} onClick={handleClick}>
       Contact Us
     </button>
-    </>
   );
 }
