@@ -25,11 +25,11 @@ export default function Home() {
       {/* Home Page-5 */}
       <Home_Part5 />
       {/* Home Page-6 */}
-      <Home_Part6 />
+      {/* <Home_Part6 /> */}
       {/* Home Page-7 */}
       <Home_Part7/>
       {/* Home Page-8 */}
-      <Home_Part8/>
+      {/* <Home_Part8/> */}
       {/* Home Page-9 */}
       <Home_Part9/>
       {/* Home Page-10 */}

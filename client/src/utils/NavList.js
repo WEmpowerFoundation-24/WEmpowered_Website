@@ -12,6 +12,10 @@ export const navlink = [
         title: "Our Team"
     },
     {
+        id:"newsletter",
+        title: "Newsletter"
+    },
+    {
         id:"roadmap",
         title: "Our Roadmap"
     }

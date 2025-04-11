@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex justify-start sm:justify-between text-white flex-wrap gap-14">
           <div className="flex flex-col justify-between">
             <p className="font-Gilroy-700 text-xl mb-4">WEmpower</p>
-            <p className="font-Gilroy-600 text-xl my-4">+91 8492394939</p>
+            <p className="font-Gilroy-600 text-xl my-4">+91 7988477400</p>
             <p className="font-Gilroy-400 text-base">wempower.foundation2024@gmail.com</p>
           </div>
           <div className="flex flex-col justify-between">
