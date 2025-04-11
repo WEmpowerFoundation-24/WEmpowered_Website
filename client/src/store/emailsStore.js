@@ -1,7 +1,6 @@
 import {create} from "zustand"
 import axios from "axios"
-const API_URL = "https://wempowered-server.onrender.com/emails";
-
+const API_URL = `${import.meta.env.VITE_SERVER}/emails`;
 axios.defaults.withCredentials = true;
 export const useEmailStore = create((set) => ({
     isLoading:false,
