@@ -7,10 +7,10 @@ export const navlink = [
         id:"about",
         title:"About Us"
     },
-    {
-        id:"team",
-        title: "Our Team"
-    },
+    // {
+    //     id:"team",
+    //     title: "Our Team"
+    // },
     {
         id:"newsletter",
         title: "Newsletter"
