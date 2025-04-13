@@ -9,7 +9,7 @@ export default function List() {
     e.preventDefault();
   
     if (link.id === "newsletter") {
-      navigate("/newsletter#newsletter");
+      navigate("/#/newsletter#newsletter");
       return;
     }
   
