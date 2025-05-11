@@ -10,17 +10,17 @@ export default function Footer() {
           <div className="flex flex-col justify-between">
             <p className="font-Gilroy-700 text-xl mb-4">WEmpower</p>
             <p className="font-Gilroy-600 text-xl my-4">+91 7988477400</p>
-            <p className="font-Gilroy-400 text-base">wempower.foundation2024@gmail.com</p>
+            <p className="font-Gilroy-400 text-base break-all sm:text-nowrap">wempower.foundation2024@gmail.com</p>
           </div>
           <div className="flex flex-col justify-between">
             <p className="xl:mr-60 font-Gilroy-600 text-lg">Quick Links</p>
-            <div className="flex gap-4 xxxxs:gap-6 xxxs:gap-16 mt-[30px] sm:mt-[8px]">
+            <div className="flex flex-col xxxxs:flex-row gap-4 xxxxs:gap-6 xxxs:gap-16 mt-[30px] sm:mt-[8px]">
               <div className="flex flex-col opacity-65 font-Gilroy-400 text-base gap-6">
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>
               </div>
               <div className="flex flex-col opacity-65 font-Gilroy-400 text-base gap-6">
-                <a className="pl-8" href="#team">Our Team</a>
+                <a className="xxxxs:pl-8" href="#team">Our Team</a>
                 <a href="#roadmap">Our RoadMap</a>
               </div>
             </div>
@@ -31,7 +31,7 @@ export default function Footer() {
               <input
                 type="text"
                 placeholder="Get Newsletters"
-                className="w-40 xxxxs:w-48 h-12 rounded-l-lg placeholder:pl-4 placeholder:text-sm placeholder:font-Gilroy-400 placeholder:text-[#0A142F] focus:outline-none"
+                className="w-20 xxxxs:w-48 h-12 rounded-l-lg placeholder:pl-4 placeholder:text-sm placeholder:font-Gilroy-400 placeholder:text-[#0A142F] focus:outline-none"
               />
               <span className="w-12 h-12 rounded-r-lg bg-[#03C1A8] flex items-center justify-center">
                 <img src={ArrowGo} alt="Arrow go" />

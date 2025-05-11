@@ -2,7 +2,7 @@
 const SDGs = ({image}) => {
   return (
     <>
-      <img src={image} alt={image} className="h-56"/>
+      <img src={image} alt={image} className="xxxxs:h-56"/>
     </>
   )
 }

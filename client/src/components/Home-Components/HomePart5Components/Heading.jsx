@@ -6,9 +6,8 @@ const Heading = () => {
           Our Mission
         </h1>
         <p className="font-Gilroy-500 xs:text-xl xs:leading-[30px] xl:text-right text-[#5D3A66]">
-          To develop and implement a comprehensive curriculum that equips
-          mothers with the digital, financial, numerical, literacy, and
-          social-emotional skills necessary for financial self-sufficiency.
+          WEmpower Foundation, established in 2024, aims to work toward a resilient community whose foundation is built on mutual respect and growth for mothers and children. 
+          At WEmpower, we are committed to a mission defined by three main objectives:
         </p>
       </div>
     </>

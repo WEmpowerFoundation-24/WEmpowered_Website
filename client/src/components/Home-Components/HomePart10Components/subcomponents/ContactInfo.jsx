@@ -5,7 +5,7 @@ const ContactInfo = ({ image, text, context }) => {
       <img src={image} alt={text} className="h-6 sm:h-7" />
       <div>
         <p className="text-sm sm:text-base">{text}</p>
-        <p className="text-sm sm:text-base text-[#FF695D]">{context}</p>
+        <div className="text-sm sm:text-base text-[#FF695D] break-all sm:text-nowrap">{context}</div>
       </div>
     </div>
   );
