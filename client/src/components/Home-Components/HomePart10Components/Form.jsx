@@ -3,8 +3,10 @@ import phone from "/src/assets/Home_Assets/Phone.png"
 import mail from "/src/assets/Home_Assets/Mail.png"
 import { useState } from "react";
 import {useEmailStore} from "/src/store/emailsStore.js";
+import { success, failed } from "../../../utils/React_toastify";
 const Form = () => {
   const [name, setName] = useState("");
+  const [question, setQuestion] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
   const [findUs, setFindUs] = useState("");
@@ -13,20 +15,22 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (phoneNo.length !== 10 || isNaN(phoneNo)) {
-      alert("Phone number must be exactly 10 digits");
+      failed("Phone number must be exactly 10 digits");
       return;
     }
     try {
-      await contactus(email, name, phoneNo, findUs);
+      await contactus(email, name, phoneNo, findUs, question);
       if (messageSent) {
-        alert("Message sent successfully");
+        success("Message sent successfully");
         setName("");
         setEmail("");
         setPhoneNo("");
         setFindUs("");
+        setQuestion("")
       }
-    } catch (e) {
-      alert(error || e.message);
+    } catch (e) { 
+      console.log(e) 
+      failed(e.response.data.message || e.message);
     }
   };
 
@@ -38,6 +42,7 @@ const Form = () => {
         <InputField type="email" placeholder="Email" value={email} setValue={setEmail} />
         <InputField type="number" placeholder="Phone number" Required={true} value={phoneNo} setValue={setPhoneNo} />
         <Options value={findUs} setValue={setFindUs} />
+        <textarea type="text" placeholder="Ask Question" required={true} value={question} onChange={(e)=> setQuestion(e.target.value)} className="px-5 py-3 border-[1px] border-[#E0E0E0] w-full h-28"/>
         <Submit LoaderData={isLoading} />
       </form>
       <div className="flex flex-wrap gap-6 mt-8">
