@@ -15,7 +15,6 @@ export const useEmailStore = create((set) => ({
             set({isLoading:false,messageSent:true, user:response.data.user});
         } catch (error) {
             set({error:error.response?.data?.message || "Error in contactUs Route"});
-            set({isLoading:false})
             throw error;
         }
     },

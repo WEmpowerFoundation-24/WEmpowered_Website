@@ -30,7 +30,7 @@ const Form = () => {
       }
     } catch (e) { 
       console.log(e) 
-      failed(e.response.data.message || e.message);
+      failed(e?.response?.data?.message || error.message);
     }
   };
 
