@@ -21,12 +21,11 @@ const contactusReceivingEmail = async (email) => {
     }
 
     // Send mail with defined transport object
-    const info = await transporter.sendMail({
+    await transporter.sendMail({
       from: process.env.EMAIL, // sender address
       to: email, // use the passed email parameter as the recipient
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>", // html body 
+      subject: "Contacted Wempowered", // Subject line
+      html: "<b>Thank you for contacting us.</b><span> We'll contact with you soon.</span>", // html body 
     }); 
   } catch (error) {
     console.error("Error sending email (contactusReceivingEmail):", error.message);

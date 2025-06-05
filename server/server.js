@@ -13,6 +13,6 @@ app.use(express.json()); // allow use to parse the content in req.body
 app.use("/emails", EmailRoutes);
 
 app.listen(port,()=>{
-   // connectDB();
+    connectDB();
     console.log(`Server is listening on port ${port}`);
  }) 
